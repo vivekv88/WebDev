@@ -1,0 +1,51 @@
+body{
+    background-color: gray;
+}
+.parent{
+    border-radius: 10px;
+    height: 500px;
+    width: 24vw;
+    border: 0.5px solid gray;
+    background-color: white;
+    /* margin: 2px;
+    padding: 4px; */
+}
+.image{
+    margin: 3px;
+    padding: 3px;
+    height: 225px;
+    width: 23vw;
+    border-radius: 14px;
+}
+.logo{
+    border: 1px solid gray;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 14px;
+    /* height: 40px;
+    width: 4vw; */
+    margin: 8px;
+    padding: 4px;
+    color: gray;
+    font-weight: bold;
+}
+#lake{
+    border-radius: 15px;
+    margin: 4px;
+    padding: 4px;
+}
+.text{
+    text-align: justify;
+    margin: 2px;
+    padding: 12px;
+
+}
+.read{
+    
+    margin: 8vw;
+    padding: 4px;
+    border: 1px solid blue;
+    background-color: lightskyblue;
+    border-radius: 15px;
+    color: blue;
+}

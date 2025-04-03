@@ -1,0 +1,36 @@
+
+.container {
+    border: 2px solid black;
+    display: grid;
+    width: 80vw;
+    /* grid-template-columns: 1fr 2fr 3fr; this fr is a unit which is specially used with grid in css in this example first column will take 1/3rd of total width and second will take 2/3rd and third column will take 3/3rd of total width...
+    if I make three columns of 1fr each then each column will occupy 1/3rd of total width of the container*/ 
+    /*sometime we have to create multiple column... so in order to perform the task we can use repeat funuction as performed below */
+    /* grid-template-columns: repeat(4,minmax(100px,1fr)); It will create 4 columns each of size 1fr  and minmax signifies that the minimum column width can be 100px and maximum it can be 1fr*/
+    row-gap: 30px;
+    column-gap: 44px;
+    height: 100vh;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4,80px);
+    grid-template-rows: repeat(2,80px);
+    justify-content: start; /*Iska use hum grid ke ander tbb karenge jab hmari grid bhut choti hai as compared to the container and we are able to move the content or grid inside the container...or in words we can say that it can we applied whenever width of container is greater than width of the grid  --> this is horizontal alignment of the grid*/
+
+    align-content: center; /*This can be applied when height of the container is greater than the height of the grid --> This is vertical alignment of the grid*/ 
+    place-content: center; /*Isko lga dene se justify-content and align-content dono property ek sth lgg jti hai*/
+
+    /*Never use padding with flexbox and grid use gap instead of padding*/
+    
+}
+
+.item {
+    border: 2px solid red;
+    height: 55px;
+    width: 55px;
+}
+.item-2{
+    align-self: none; /*ye properties particular cell prr apply ho rhi hai jisme item present hai pure container par apply nhi ho rhi hai*/
+    justify-self: none;
+}
+
+

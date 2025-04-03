@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow Property</title>
+    <style>
+        .box{
+            width: 10vw;
+            height: 20vh;
+            border: 2px solid black;
+            /* overflow: scroll; --> iska mtlb hua ki agr sbb thik bhi hai tbhi bhi scroll bar daalna hai */
+            overflow: auto; /* ye kahta hai ki agr hmara content overflow krta hai to scroll bar add krne else mtt krna include scroll bar*/
+            /* white-space: nowrap; --> text will not occupy space vertically it will ocupy space only horizontally */
+            text-overflow: ellipsis; /* --> ye text ke aage dotted spot dega jisse pta chalega ki aage aur bhi kuch likha hai*/
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am Vivek Vishwakarma and I love to write Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet fugit vero temporibus, incidunt necessitatibus optio nulla ipsum ducimus. Voluptatem, consectetur eaque?
+    </div>
+</body>
+</html>

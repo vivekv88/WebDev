@@ -1,0 +1,7 @@
+Multer :-
+    what is multer - if we want to upload images,videos or document and send them to someone just like whatsapp, and telegram or facebook
+
+so agr humko aisa featureadd karna hai to hum multer ka use karte hai
+
+multer ek form ke liye kaam krta hai aur uss form mei humko encryption type define krna hoga i.e "enctype = "multipart/form-data" agr hum isko set nhi krte to multer will not work
+

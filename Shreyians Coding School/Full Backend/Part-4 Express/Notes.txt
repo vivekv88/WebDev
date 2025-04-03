@@ -1,0 +1,21 @@
+Things to do in this lecture:-
+    #- Introduction to Express.js 
+        Express js ek npm package hai, and it is a framework, and framework ka mtlb ho gya flow mtlb ki humko kab kya krna hai ye express btata hai but kaise krna hai wo humari mrji hai, express bss humko flow provide krta hai
+        Express manages everything from receiving Request to giving response
+
+        Route - kisi bhi website ke domain ke baad jo chij likhi hoti hai wo route kahlati hai
+            for Example - www.facebook.com/profile/  in this /profile/ is our route
+    #- Setting up a basic Express Application
+    #- Routing
+
+
+    #- Middleware
+        agr hum chahte hai ki hmara route execute hone ke pahle kuch task perform ho so for that we will use middleware, so anything before execution of the route is middleware
+        jab bhi server request accept karta hai to waha se route ke beech pahuchne tak agr aap uss request ko beech me rokte ho and kuch perform krte ho, to ye element middleware kahlata hai
+        Middlewares are always displayed on console not on frontend
+
+    #- Request and response handling
+        frontend-backend-frontend  mtlb ki phle hum browser prr url likh ke request bhejenge and that is part of our frontend then request will be processed by express and that is backend and then response is send by backend to the browser and that is again frontend, so this is the process of request and response handling
+
+    #- Error handling
+        for this check at google express js error handler and took the default error handler code from there and paste it on your IDE and error handler is written at the very end of the code 

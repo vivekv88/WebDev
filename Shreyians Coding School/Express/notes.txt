@@ -1,0 +1,41 @@
+
+
+# Middleware ek aisa function hota hai jo har route se pahle chalta hai,iska matlab saare routes mei koi bhi chale usse phle    
+    Middleware chalta hai usme likha code phle execute hota hai...
+    req - isme user ka data hota hai jo ki server ko data request kar raha hai such as device he is using, his location etc...  related to that person
+    res - isme controls hote hai jiske basis prr hum server se reponse bhej paate hai
+    next - is just a push so that we can move to the next request that should be executed
+
+Node ke saath ek dikkat hai ki agr control ek baar bhi kisi Middleware par gya to control khud se agle route/middleware par nhi jaayega, usko agle par le jaane ke liye puch krna padega aur ye puch kahlaayega next ko chaalana
+
+Aisa koi bhi route jiska kuch hissa same rhta hai aur kuch hissa baar baar change hota hai to iske liye aap dynamic route bna skte hai
+
+url mein jab bhi aapke pss ek aisa pattern hota
+/profile/:username - this (:) sign makes this route dynamic 
+
+
+# Template Engines -- hote bhut saare hai lekin hum ejs ka use krne wale hai
+    HTML ke pss calculations krne ki superpowers nhi hoti hai but ejs ke pss hoti hai i.e. if we type (1+2) in html it will give us output as (1+2), but in ejs it will calculated and return answer (3)
+
+    So inshort ejs is html with superpowers
+
+    Steps to setup ejs:-
+        1) ejs install - npm i ejs
+        2) configure ejs - app.set("view engine","ejs")
+        3) ek views naam se folder bnao
+        4) usme ejs files banao
+        5) send ki jgh render karo => render karte waqt make sure ki aap views folder ke ander wali hi koi file ka naam likhein, aur render function mei .ejs mention na kare
+
+# Template Engines => ye ek style of markup se convert krke apko html dete hai
+    bhut saare hote hai template engines - pug, handlebars, ejs, jade...etc
+    we are using ejs as it is very very similar to html
+
+
+# Static files
+    images, stylesheets, frontend js setup karna
+
+    static files ko setup karne ke liye Steps
+        1) create a folder called public
+        2) create 3 folders inside it, images , stylesheets, and javascripts
+        3) configure the express statics in script.js file
+        4) understand the path

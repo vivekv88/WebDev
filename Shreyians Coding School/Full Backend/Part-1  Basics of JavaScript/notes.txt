@@ -1,0 +1,37 @@
+Things to learn in this video
+
+Fundamentals of the JavaScript
+1. Arrays and objects
+2. Function Return 
+3. Async Js Coding
+
+Inside Array we will cover - forEach, map, filter, find , indexOf
+
+One more thing about arrays of the Js - We can put any kind of data inside the same js array 
+
+forEach loop ka use krte hai jab hum array ke hrr element ke sth same operation krna hota hai
+map - array prr chalta hai, aur map input array ke equal size wala ek dusra array bna deta hai jo ki initially khali hota hai, and map kahta hai bhai tumhara kaam ho gya chalo thik hai ab tum jao uss khali space prr jo ki new cloned array mei hai
+
+map is very similar to forEach loop but the difference is that ki forEach same array prr kaam krta hai lekin map ek dusri array bna krr uspe kaam krta hai
+
+filter - ye kya krta hai ki map ki trh ek nyi array bna kar uspe kaam krta hai lekin unlike array isme same size ka dusra array nhi bnta different size ka array bnaya ja skta hai, and filter mei jo value return hoti hai wo boolean hoti either it will return true or return false, if the returned value is true then that element of the previous array will be pushed into the new array created by the filter...baki code mei ek case likha hai
+
+find - array mei kisi value koi find krne ke liye find ka use krte hai and ye first matched value return krta hai jaise ki agr koi value humne find krne ko bola aur wo array mei 2 baari hai to phle wala hi return karega, and agr value mili tab to return karega else undefined print karega
+
+indexOf - used to find the index of an element inside an array, used earlier in the alone of the spotify
+
+Object - basically written inside a curly braces like as:-
+        {
+            name: " Vivek ",
+            age: "22",
+            variable: "Value"
+            yha kuch bhi hoga : yha koi value hogi chahe string value ya firint etc...
+        }
+
+
+Just like array we can find the length of the function - and that length of the function will be th enumber of parameters passed inside the function , also function is a kind of object
+
+
+Async Js Coding :- 
+ 1. Line by line code chale to isko kahte hai synchronous 
+ 2. jo bhi code async nature ka ho usko side stack mei bhej do and agle code ko chlao jo bhi sync nature ka ho, jab bhi sara sync code chal jaye, tab check karo ki async code complete hua ya nhi and agar wo complete hua ho to usko main stack mei laao and chalao

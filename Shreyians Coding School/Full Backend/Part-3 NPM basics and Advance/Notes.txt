@@ -1,0 +1,28 @@
+Topics to be covered:-
+    NPM Understanding
+    installing and uninstalling anything basics and advance
+    understanding node_modules
+    dependencies
+    devdependencies
+    scripts - understanding default scripts PATH and custom scripts
+
+NPM - basically ek platform hai jaha prr humko different - different packages milte hai.
+    module and package dono alg - alg hai,  node js core mei jo installed ata hai wo kahlata hai module,
+    and jo hum npm se download krte hai wo hota hai package
+
+installing and uninstalling anything basics and advance-
+kisi bhi chij ko npm se install krne ke kiye hum likhte hai ->  npm install packagekaNaam   or   npm i packagekaNaam
+to uninstall use -> npm uninstall packagekaNaam
+To install a particular version of a package we write -> npm i packagekaNaam@version  Ex- npm i accessibility@3.0.9
+
+Understanding node_modules - basically isse humko koi lena dena nhi hai... and iss folder ke ander jo bhut saare folder bnte hai wo hmare installed package ka code hota hai and uske sth jo package humne install kiya wo jisprr depend krta hoga wo packages bhi install hote hai
+
+Dependencies - packages and packages ki dependencies
+devdependencies - aise packages jo sirf development mei kaam aayega prr jab app bnn jayega and upload ho jayega tab hum inn packages ko use nhi kar payenge
+
+Question- kai baar aap koi script chalte ho and us script mei likhte ho aa ye command 
+            npm start
+            npm run dev
+            npm run concurrent
+        mtlb ki kabhi kabhi script mei run likhte hai aur kabhi kabhi nhi likhte aise kyu????
+Answer - Aise isliye hai kuki jab hum node and npm ko install krte hai to "start and test" ye dono scripts ka path humare operating system mei mention ho jata jiski wjh se ye execute hop jata hai lekin agr hum likhe "npm chacha" where chacha is any script then it will give error and to debug this we have to write "npm run chacha" where 'run' ka mtlb hai ki 'chacha' naam ki script dhudh ke chalao

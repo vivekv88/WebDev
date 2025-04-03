@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserting & Removing elements in DOM</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container red bgcolor sense">
+        <div class="box" data-createdby="Vivek Vishwakarma" data-dedicatedto="Web Development">Hey I am a box...</div>
+        <div class="box">Hey I am a box...</div>
+    </div>
+    <script>
+        // console.log("Vivek")
+        // let div = document.createElement("div");
+        // div.innerHTML = "Welcome to sigma Web Development"
+        // div.setAttribute("class","created");
+        // document.querySelector(".container").replaceWith(div); 
+
+        let cont = document.querySelector(".container");
+        cont.insertAdjacentHTML("beforeend","<b> Hey please help me I am suffering from this government and the peoples at the earth...")
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+Things to study ->
+    mongodb installation
+    mongodb connection
+    schema
+    model
+    crud - create read update delete
+
+
+    Hmare 2 server hai ek to node ka hai and dusra mongodb ka hai and mongoose humko help karta hai node ke server ko mongo ke server se connect karne mei
+
+ORM & ODM :-
+    Object-Relational Mapping (ORM) and Object-Document Mapping (ODM) are both techniques that allow developers to interact with databases using programming language objects instead of writing raw SQL queries: 
+
+
+mongoose.Schema() -> ek method hai jo ki accept krta hai object 
+mongoose.model() -> it will create a model kuki without creating model we cannot perform crud operation and hum jo bhi model create karenge uska plurarised form dekhne ko milega i.e. agr humne mongoose.model("user") -> user naam ka model bnaya to wo users naam se bnega.
+
+agr hum chahte hai ki hmara crud operation direct na perform hoke tbb perform ho jab jab kisi operation ka route call ho to chale jaise ki jab (/create) ka route call ho to -  to create operation ho same as for delete, update and users...
+so in order to do that we have to export our models into node using modules.exports = mongoose.model("").
+modules.export is not a method it is a value so we have to apply an (=) sign and then assign the value
+
+
+find() - array deta hai
+findOne() - object deta hai

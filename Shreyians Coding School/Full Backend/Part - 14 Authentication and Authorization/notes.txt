@@ -1,0 +1,19 @@
+Authentication and Authorization :-
+
+user ko profile ka access dene se pahle ye check karna hota hai ki user hai kon - this is call authentication
+in simple words we can say that the process of validating a user is called as authentication
+
+the permission that you got for some task to be performed is known as authorization - mtlb ki kis chij ko krne ki permit hai aur kya krne ka permit nhi hai
+
+
+--> Sabse pahle humko kuch chije sikhni hai 
+    i) cookies kaise set karte  hai
+        cookie set karne ke liye res.cookie("nameofcookie","valueoccookie")   use hota hai
+        to read cookie req.cookies ko console log karenge and to read cookie humko cookie-parser ka package install karna parega and also we have to require it and write app.use('cookieparser());
+
+    ii) bcrypt kaise use krte hai for password encryption and decryption
+            encryption  means hashing of password and decryption means comparison of the password during the time of login
+
+    iii) jwt kya hai and jwt mei data kaise store karein and baahar nikaalein 
+            jwt teen hisso se bnta hai -> please visit official site once to see actual visualisation
+            

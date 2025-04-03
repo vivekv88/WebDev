@@ -1,0 +1,5 @@
+console.log("Code is running...")
+console.log("Code is also running...")
+console.log("Code is looking like a wow...")
+console.log("Code is executing...")
+console.log("Code is terminated...")

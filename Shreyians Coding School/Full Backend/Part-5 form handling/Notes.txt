@@ -1,0 +1,18 @@
+form handling and working with forms
+handle backened process of the forms and making sure the data coming from any frontened library, framework, templating engines, we still handle it at the backened
+
+session & cookie -:  ek example lete hai ki jb bhi hum instagram par kuch krne jate hai to server humse login krne ko kahta hai aur jaise hi hum login kar lete hai server humko bhool jata hai and then agr humko again koi photo ya video like krna ho to humko fir se login krna padega and baar - baar ye krna bhut irritating hota hai... to void this we have to learn about session and cookie
+
+hum log kuch bhi data frontend par browser par rakh skte hai and jab bhi aap kuch bhi request backend par karoge wo frontend par saved data automatically backend par chla jayega
+
+jab hum first time login krte hai and kuch information retrieve karte hai server se then server humko uss information ke sth-sth ek string return krta hai jo ki hmare frontend par saved hoti hai and that string at the frontend is actually cookie, and this string is saved both at the browser i.e. the frontens as well as backend that is the server
+
+cookie - means data jo apke browser par save hai for your recognisation at the server, iss cookie ka use hum bhut jada krte hai authentication krane me mtlb ki logged in rkhne mei
+session - jo hum server se connected rhte hai on the basis of that cookie which is saved at our browser this connection is actually session.
+
+Logout kaise hota hai - aap jaise hi logout krte ho wo cookie apke browser or frontend se remove ho jti and then server apko pehchan nhi pata ki aap kon ho and in this way u r logged out of the application
+
+NOTE:- 
+jab bhi login krte hai ya fir koi form fill krte hai and then login or submit button par click krte hai to server par hmara plain text nhi jada wo kuch mixed up hoke jata mtlb ki system ki info location and data etc sab mix hoke jata hai and these all are in hexadecimal form mtln non-readable hota hai
+
+tumne to bheja tha plain text and server ko mila blob which is not directly readable ab is cheej ko handle krna padega ki hum uss blob ko wapas se readable bna ske

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Class Selector */
+        .red{
+            background-color: red;
+        }
+
+        /* Id Selector */
+        #green{
+            background-color: green;
+        }
+
+        /* Child Selector -- means <p> tag mainly div ke ander hona chahiye div ke ander kisi tag mei nhi -- Direct child hona chahiye */
+        div > p{
+            color: white;
+            background-color: black;
+        }
+
+        /* Descendent Selector -- means div ke andar paragraph khi bhi la hoga chahe article, main etc. kisi bhi tag ke ander bss div mei <p> hona chahiye*/ 
+        div p{
+            color: aqua;
+            background-color:black;
+        }
+
+        /* Universal Selector -- basically applicable for every element*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited{
+            color: gold;
+        }
+        a:link{
+            color: green;
+        }
+        a:hover{
+            background-color: black;
+        }
+        a:active{
+            background-color: blue;
+        }
+
+        p:first-child{
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>I am Sexy</p>
+        <p>I am hot</p>
+    </main>
+    <div class="red">
+        I am a div
+        <article>
+            <p>
+                Lorem ipsum dolor sit amet.
+            </p>
+        </article>
+       
+    </div>
+
+    <div id="green">
+        I am Hutiya
+    </div>
+
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.xnxx.com">Go to Facebook</a>
+</body>
+</html>

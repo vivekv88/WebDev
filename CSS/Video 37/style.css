@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: sticky;
+    top: 0px;
+}
+nav {
+    background-color: rgb(243, 144, 6);
+    padding: 15px 0;
+    /* position: fixed;
+    top: 0;
+    width: 100%; */
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+    margin: 4px;
+    padding: 4px;
+    font-size: large;
+    color: rgb(169, 8, 8);
+}
+
+.parent {
+    /* border: 2px solid black; */
+    height: 550px;
+    margin: 30px 0px;
+    /* padding: 15px 10px; */
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+}
+
+.child {
+    /* border: 2px solid black; */
+    height: 250px;
+    width: 28%;
+    display: inline-flex;
+    margin: 65px;
+    padding: 50px;
+    background-color: rgb(230, 104, 192);
+}
+
+#me {
+    background-color: rgb(81, 73, 243);
+}
+main{
+    background-color: black;
+    /* margin: 34px; */
+    padding: 50px;
+}
+
+.rad {
+    /* height: 50px; */
+    /* width: 70%; */
+    border: 2px solid white;
+    margin: 0 25vw;
+    /* padding: 50px; */
+    text-align: center;
+    border-radius: 20px;
+    /* background-color: rgb(241, 238, 236); */
+    /* position: absolute; */
+    font-size: xx-large;
+    color: white;
+}
+
+img {
+    position: fixed;
+    bottom: 0px;
+    right:0px;
+}
+footer{
+    /* border: 2px solid black; */
+    /* width: 95%;*/
+    height: 60px; 
+    /* margin: 20px; */
+    font-size: xx-large;
+    text-align: center;
+    /* padding: 10px; */
+    background-color: cadetblue;
+}

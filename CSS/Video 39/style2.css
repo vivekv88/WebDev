@@ -1,0 +1,39 @@
+
+.container {
+    border: 2px solid black;
+    display: grid;
+    grid-template-areas: "nav nav nav"            /*jaise hum row aur column ka naam de rhe the usi trh ab area ka naam de rhe hai*/
+                         "side article article"
+                         "footer footer footer";
+}
+
+.item {
+    border: 2px solid red;
+    height: 55px;
+    /* width: 55px; */
+}
+
+.item-1 {
+    grid-area: nav;
+    background-color: aquamarine;
+
+
+}
+.item-2 {
+    grid-area: side;
+    background-color: aqua;
+
+}
+
+.item-3 {
+    grid-area: article;
+    background-color: forestgreen;
+}
+.item-4 {
+    grid-area: footer;
+    background-color: hotpink;
+}
+.item-5 {
+    grid-area: nav; /*5 will overlap with div 1 */
+}
+

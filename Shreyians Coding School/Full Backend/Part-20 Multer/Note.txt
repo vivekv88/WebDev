@@ -1,0 +1,8 @@
+We are designing a basic app in which we will be able to write users posts
+
+Functionalities of the app will be:-
+    login and register kar paayenge
+    logout kar paayenge
+    posts likh paayenge
+    post like kar payenge
+    post delete - it will appear only to post owner

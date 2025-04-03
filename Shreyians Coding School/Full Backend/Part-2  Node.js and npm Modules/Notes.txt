@@ -1,0 +1,52 @@
+Things to do :-
+
+1. Node.js Basics
+2. Introduction to Node.js
+3. Installing Node.js and npm
+4. Working with Modules
+5. File system Operations
+6. Understanding HTTP Modules
+
+
+Node.js is not a:-
+    Programming Language
+    Technology
+    framework
+    library
+
+    apart of these Node.js is js runtime environment...ab hum iss js runtime environment ko samjhne ja rhe hai
+
+    js se backend nhi ban skta
+    kuki js ke pss wo functionalities nhi hai jinse backend bnaya ja skta hai
+    Ryan Dahl - ek banda hai isne soacha ki js se backend bnna chahiye...to isne kya kiya ki...
+    Google chrome ka v8 engine ka code open source hai and Ryan Dahl uss code mei chhedkhani kar rha hai
+    kuki chrome ka v8 engine bana hai c++ mei
+    fir usne soacha ki hume to js mei code krna hai
+
+    hum js ka code likhenge jo ki wrapper laye of js receive karegi and wo code v8 engine ke c++ modules ke sath ek  server create karega
+
+    in short agr mai bolu to javascript ka agr node ki help se run kiya jaye to wo ek server bna skta hai means it can act as backend code that is why node.js is a runtime environment
+
+    node is basically js wrapper with v8 code and this thing is a runtime environment
+
+    npm - is basically a package store, mtlb k aap bss waha se code borrow krr rhe jo kisi aur ne likhe and aap use krr rhe hai usko apne code mei 
+
+    npm init -> package.json create krr liya hai -> lekha jokha of the project
+
+
+To study about npm modules please visit node.js documentation and mainly we have to study -> FileSystem and HTTP modules
+
+Functionalities of FS Modules that we have covered in this lecture :-
+    writeFile
+    appendFile
+    copyFile
+    rename
+    rmdir
+    rm
+    unlink
+
+Now we will study about HTTPS Module :-
+    http and https:-
+        protocal - set of rules, internet par kuch bhi karne ke liye kuch rules bnaya gya hai unke dwara jinhone internet bnaya hai, ab un rules ko follow karna jaruri hai, aur ye rules follow ho isliye ye rules apke operating system ke software mei preinstalled aate hai
+
+    http - ek protocal hai, yahi protocal/rule hai jisko follow kiye bina aap internet pe na hi kuch bhej sakte hai aur na hi kuch manga skte hai

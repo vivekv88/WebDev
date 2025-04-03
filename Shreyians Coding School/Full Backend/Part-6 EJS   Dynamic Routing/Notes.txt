@@ -1,0 +1,39 @@
+Things to do :-
+
+1 - initialize a project with npm
+2 - express install
+
+
+
+setting up parsers for form
+
+setting up ejs for ejs pages
+    i. install ejs from npm
+    ii. setup ejs as view engine
+
+setting up public static files
+
+# - Dynamic Routing
+        i. Dynamic Routing
+            hum log kai baar kuch routes dekhte hai unmein sirf kuch hi hissa change hota hai
+            for example -  
+                /author/harsh
+                /author/harshita
+                /author/harshika
+                /author/harshitakabf
+
+                /profile/harsh
+                /profile/harshita       etc...
+
+            humko ye routes baar baar na likhna pde iske liye hmara dynamic routing comes into action
+                    i. sabse pahle apne browser par jao
+                    ii. url likhiye apna jo apko chahiye and enter dbaiye
+                    iii. ab us url route ko create kriye
+                    iv. res bhejiye kuch bhi
+                    v. ab usi url ko agr dynamic bnana hai to realise karo konsa part dynamic hai aur us part ke aage route mei ':'  colon lga do 
+
+                    jaisa ki upr wale example mei /author/... ke baad wali chij dynamic hai to uske aage : lga do uske route mei
+                    i.e.  /author/:kuchbhi   yaha par kuchbhi ek variable ki trh kaam karega mtlb /author/  ke baad koi bhi chij likhi hogi route mei to run hoga
+
+                
+        ii. how to get data coming from frontend at backend route

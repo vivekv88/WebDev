@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: aqua;
+        }
+        .boxes:first-line{
+            color: red;
+        } */
+        /* .boxes *{
+            color: blue;
+            border: 2px solid black;
+        }
+        /* Attribute Selector */
+        /* p, a, .box, [data-color = "primary"]{
+            padding: 45px;
+        }  */
+        /* .box:nth-last-child(2){       Niche se second wale element ka color red kar dega
+            /* color: red; 
+        } */
+
+        /* boxes ke content ke phle ye wala content insert kar dega --> so we can insert element dynamically using this property of the CSS --> These two are called Pseudo elements not selectors*/
+        .boxes::before{
+            content: "It's Vivek here";
+            color: red;
+        }
+        .boxes::after{
+            content: "This content is inserted dynamically after the main content of the boxes class";
+            color: blue;
+        }
+
+        /*This will apply these styles to the selected content by the user --> mtlb ki agr user koi text select krta hai to uska bg-color yellow ho jayega and text color red ho jayega*/
+        ::selection{
+            background-color: yellow;
+            color: red;
+        }
+
+        .box::first-letter{
+            color: brown;
+            font-size: 45px;
+        }
+        input::placeholder{
+            font-size: small;
+            color: navy;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, architecto ratione? Sunt molestias, facilis architecto omnis modi recusandae et delectus unde velit obcaecati eaque. Reiciendis repellat porro impedit, ea excepturi cumque officia assumenda veniam cum, molestias blanditiis illum vitae incidunt expedita accusantium hic dolorem praesentium.</div>
+        <div class="box">Hey I am a container...</div>
+        <div class="box">Hey I am a container...</div>
+        <input type="text" placeholder="Type your name here" name="username">
+    </div>
+</body>
+</html>

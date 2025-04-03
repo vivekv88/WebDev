@@ -1,0 +1,47 @@
+/* :root{
+    --color: rgba(9, 59, 224, 0.895);
+    --text-color: white;
+    --seccolor: rgb(97, 145, 235);
+} */
+:root{
+    --color: rgba(6, 199, 54, 0.895);
+    --text-color: white;
+    --seccolor: rgba(171, 246, 212, 0.888);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--seccolor);
+    font-family: "Kode Mono", monospace;
+}
+ul a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+nav{
+    background-color: var(--color);
+    /* margin: 4px;
+    padding: 4px; */
+    padding: 12px 0;
+}
+/* ul{
+    display: inline;
+    display: inline-block;
+} */
+/* ul li:nth-child(odd){
+    background-color: var(--seccolor);
+}
+ul li:nth-child(even){
+    background-color: var(--color);
+} */
+ul li{
+    margin: 2px;
+    padding: 2px;
+    /* list-style-position: inside; */
+    list-style: none;
+    font-size: large;
+    display: inline;
+    /* color: var(--text-color); */
+}

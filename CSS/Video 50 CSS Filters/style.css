@@ -1,0 +1,18 @@
+.img1{
+    width: 400px;
+    height: auto;
+    filter: blur(1px);
+}
+
+.img2{
+    width: 400px;
+    height: auto;
+    /* filter: contrast(150%); */
+    filter: invert(0.23);
+}
+
+.img3{
+    /* filter: sepia(100%); */
+    filter: opacity(.5);
+    filter: grayscale(50%);
+}

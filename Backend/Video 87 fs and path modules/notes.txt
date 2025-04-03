@@ -1,0 +1,20 @@
+fs.writefile() use krna hai kuki fs.writefilesync() problem create karega 
+
+fs.writefilesync() phle file create kar leta hai uske baad next line of code ko execute krta hai lekin fs.writefile() background mei file create krta rhta hai aur next line of code ko execute kar deta hai
+
+fs.writeFile("Vivek2.txt","Vivek is a bad boy2",()=>{
+    console.log("Done")
+    fs.readFile("Vivek2.txt",(error,data)=>{
+        console.log(error,data.toString())
+    }) 
+    //again
+    fs.writeFile("Vivek2.txt","Vivek is a bad boy2",()=>{
+    console.log("Done")
+    fs.readFile("Vivek2.txt",(error,data)=>{
+        console.log(error,data.toString())
+    })    
+})   ......isi ko baar baar krna padega jo ki ek achii practice nhi hai because isse callback hell create ho jayega...therefore we will look into promises..
+})
+
+
+In case agr kuch smjh nhi ata to node.js ki website prr jake documentation read kriye

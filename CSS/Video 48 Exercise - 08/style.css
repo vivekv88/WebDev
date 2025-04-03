@@ -1,0 +1,33 @@
+.container{
+    background-color: blue;
+    width: 80vw;
+    height: 70vh;
+    position: relative;
+}
+.box{
+    background-color: red;
+    width:60px;
+    height: 60px;
+    border-radius: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: MotionX 2s linear infinite, 
+    MotionY 2s ease-out infinite alternate;
+}
+@keyframes MotionX {
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
+}
+@keyframes MotionY {
+    from{
+        bottom: 0;
+    }
+    to{
+        bottom: 100%;
+    }
+}

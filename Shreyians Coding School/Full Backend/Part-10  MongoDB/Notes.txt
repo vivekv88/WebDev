@@ -1,0 +1,36 @@
+Data Storage:
+    aisa kuch jaha par hum saare users ki info ko store kar sakte hai
+    for ex- ek file create kiya info.txt and write some info inside it and it is data storage, but this file is not much efficient because it cannot store media, binary code etc.
+    Therefore we are going to learn something which is called DataBases(DBS).
+TYPES OF DBS:-   SQL & NoSQL
+
+SQL - data ko ek roop mei rakhne ka kaam karta hai - basically in the form of tables but we will not study SQL here kuki ye tables and structured way mei data leta hai lekin hum data ko in the form of objects pass karenge which will be done by NoSQL
+
+NoSQL - mongoDB wala (mongoDB hmare database ka naam jo NoSQL theory ko follow karta hai)
+mongoDB objects ke roop mei data store karega
+
+What and Why :-
+    data ko save krne ke liye use krte hai jaise ki humne  agr facebook prr kisi ko msg kiya to uska time date and day ka record rakhna that is the use to database because in order to store data we will be using database
+
+NOTE :- 
+        Backend mei 2 server hote hai 1- Application server  & 2- DataBase server
+        Application server is basically Node & Database server is basically mongoDB
+
+        User jo request bhejta hai wo pahle application server par jata hai agr request kisi database ke liye hai to pahle request pahle application server ko jayegi the database server ko forward hoti hai fir database server se response application server par jata hai and then response send back to the users browser from application server
+
+terminologies - collections, documents, schemas,keys, models
+
+    kisi bhi project mei different - different identities hoti hai and wo identities ka collection hota hai apna apna....
+        for example - we have a project A - and it different kind of data jaise ki Sales data, customer data, product data, expired product data...etc., these datas can be termed as sales collection, customer collection, product collection and so on so these are collections and wholely Project A is a Database
+
+        Pahle to aa gya database uske ander ka jo different-different data hai wo collections ho gye data ke and age hum inn collections me se kisi ek ka data nikal rhe hai to wo kahlayega hmara Document
+
+        Flow-
+            Database -> Collections -> Document
+
+
+CODE mei            ->          Database mei 
+----------------------------------------------------------------
+mongoose.connect    ->          Database create hoga
+model create        ->          collection create hoga
+CREATE code         ->          creates document

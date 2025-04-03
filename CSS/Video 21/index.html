@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity & Cascade</title>
+    <style>
+        /* The specificity of this selector is 10 */
+        /* Whenever the specificity of selector is same then position is considered -- one which is last will be in action */
+        .cred {
+            color: red;
+        }
+
+        /* The specificity of this selector is 10 */
+        .cyellow {
+            color: yellow;
+        }
+
+        /* The specificity of this selector is 10 */
+        .cpurple {
+            color: purple !important;   /* !important lga dene se specificity 10000 points tak ki badh jati hai */
+        }
+
+        /* The specificity of this selector is 1 */
+        h1 {
+            color: aqua;
+        }
+        /* Agr complex specificity available hai to hum individual specificity ko add kar denge... as done below */
+        /* The specificity of this selector is 1 + 10 = 11 : 1 is for element selector h1 and 10 is for class selector .cred*/
+        h1.cred{
+            color: aqua;
+        }
+        /* The specificity of this selector is 10 and this is an example of an attribute selector*/
+        [data-x=a] {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 data-x="a" class="cred cyellow cpurple">CSS Specificity</h1>
+    </div>
+</body>
+
+</html>

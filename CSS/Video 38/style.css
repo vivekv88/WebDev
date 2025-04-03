@@ -1,0 +1,66 @@
+.container {
+
+    /* These properties are only for the container not for the items inside it... so use it only for container not for the items*/
+
+
+    border: 2px solid red;
+    display: flex;
+    /* justify-content: space-evenly; justify-content agr hum center krte hai to container ke do axis hote hai main axis and cross axis... ab agr flex-direction row hai to main axis left to right point karega and cross axis top to bottom point karega... but agr flex direction column hai to cross axis horizontal hogi and main axis vertical hogi... and justify content mei jo bhi change kiya jata hai wo main axis ke along hota hai na ki horizantally or vertically... so hmesa main axis and cross axis analyse krke hi judge kre ki kaun si direction mei change hone wala hai... */
+    height: 80vh;
+    align-items: center;
+    /* aur bhi bhut sari properties hoti hai jo ki use ki jati hai you can explore these on your own kuki sari to apply ki nhi ja skti ek sath air ne sari btayi hai lekin maine sirf ek apply ki hai hoti bhut sari hai */
+    flex-direction: row;
+    /* aur bhi hoti hai jaise ki column-reverse, row, row-reverse etc explore krna sbb smjh aa jayega...*/
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    /* agr hmare container ke content overflow kar rhe honge to unko niche shift kar dega content overflow nhi hone dega...*/
+    align-content: flex-end;
+    /* iska use hum krte hai jab hmare pss ek se jada row hoti hai agr single row hai to hum align-items ka use krte hai but agr multiple row hai to align-content ka use karenge*/
+
+    /* there is no any property for justify-items -- in flexbox*/
+
+    flex-flow: row;
+    /* This property is used to set two conditions simultaneously 1. flex-direction and  2. flex-wrap*/
+
+    /* gap: 30px;  This is for gap between the items for both row and column equal gap will be there...
+    row-gap: 40px;  this is only for giving row gap between the items...
+    column-gap: 10px;  this is only for the column gap between the items.... */
+    gap: 40px 10px;
+    /*by using this we can simultaneously give the row and column gap first one is for row and second is for column....*/
+}
+
+.item {
+    border: 2px solid black;
+    height: 40px;
+    width: 40px;
+    /* margin: 4px; */
+    background-color: green;
+    
+}
+
+/* Jis item ka order jitna jada hoga wo item utna hi last mei lgg jayega aur jiska order kam hoga wo phle aayega this is all about the css order property for the item inside a container
+
+Default order for every item is zero(0)
+
+In case agr do items ka order same hua to jo phle aa rha hoga wo phle aayega jo baad mei aa rha hoga wo baad mei aayega
+
+*/
+.order-1 {
+    order: 1;
+}
+
+.order-2 {
+    order: 2;
+}
+
+.order-3 {
+    order: 3;
+}
+.item-1{
+    flex-shrink: 0;  /* iss case mei jis item prr ye property lgi hogi wo apni aadhi width the shrink ho jayega in case overflow ke case bante hai to */
+    flex-grow: 0; /* Item that posses this property will take space of 3 items it will grow upto size of three items*/
+    align-self: flex-end;
+}
+.item-5{
+    align-self: flex-start; /* this property will be used to align a single item self*/
+}

@@ -1,0 +1,11 @@
+things to be done:-
+    create user account and for that we have to use
+        mongoose
+        schema bnana parega
+        model create karna parega
+        usercreate krna hoga ->> password ko ->> hash krna hoga
+        jwt token use ->> cookie send krna hoga
+
+        after these for
+        login ->> token milega ->> decrypt ->> we got email
+        

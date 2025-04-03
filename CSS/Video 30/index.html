@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root{
+           --color:rgb(7, 181, 234);  /*     --> yaha par hamara global variable declare hua hai iski help se hum kisi bhi element ka color change kar skte hai iska use kiya jata hai jab humko bhut sare elements ko same bg color dena ho ya koi bhi aur operation krna ho*/
+            --seccolor:rgb(86, 95, 232);
+            --defop:0.5;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color: var(--color);
+        }
+        .container{
+            background-color: var(--seccolor);
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style: none;
+            padding: 34px;
+            opacity: var(--defop);  /*blur effect lga dega elements prr*/
+
+        }
+        ul li:first-child{
+            --color:rgb(230, 115, 14);   /*local varible --> CSS Variables ka use hum krte hai jab humko ek hi color jgh jgh lgana ho to*/
+            background-color: var(--color);
+            border: 3px solid var(--seccolor);
+        }
+        ul li:last-child{
+            --color:rgb(5, 123, 36);
+            background-color: var(--color,blue);  /*In case color variable found nhi hota hai to color automatically green ho jayega*/
+            border: 3px solid var(--seccolor);
+        }
+        /*Jaruri nhi ki CSS Variables sirf colours ko hold kare wo aur bhi properties par apply ho skti hai
+        ye background URLS,, strings, numbers etc ke liye use ho skte hai*/
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos est maxime porro explicabo, odit magni officiis cumque voluptatibus. Delectus laudantium recusandae tempora sapiente quo enim ratione sequi incidunt saepe veniam soluta at aspernatur voluptates perferendis cupiditate vitae, atque consequatur hic iure doloremque eaque natus? Voluptatum.
+    </div>
+</body>
+</html>

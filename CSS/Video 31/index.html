@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+    <style>
+        body{
+            background-color: red;
+        }
+        @media screen and (orientation: portrait){
+            body{
+                border: 4px solid yellow;
+            }
+        }
+        @media only screen and (max-width: 455px){
+            body{
+                background-color: aqua;
+            }
+            .boxes{
+                
+                flex-direction: column;
+            }
+        }
+        /* This is the basic syntax of the  media query :-
+        Media Query ko use kiya jata hai responsive websites bnane ke liye
+        @media not|only mediatype and (expressions){
+            CSS - Code;
+        }
+        */
+        .boxes{
+            display: flex;
+        }
+        .box{
+            width: 344px;
+            height: 344px;
+            border: 2px solid blue;
+            margin: 3px;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Hello Today I am in Mood of doing web development without any break it is going a great marathon
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

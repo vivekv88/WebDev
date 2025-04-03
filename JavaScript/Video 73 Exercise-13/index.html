@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 13</title>
+    <style>
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid black; */
+            width: 50vw;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .image{
+            position: relative;
+        }
+
+        .text h2,
+        p {
+            padding: 0px 2px;
+        }
+
+        .capsule {
+            position: absolute;
+            bottom: 3px;
+            right: 0;
+            background: #201b1b;
+            z-index: 10;
+            opacity: 0.9;
+            padding: 2px;
+            color: white;
+            border-radius: 2px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="https://i.ytimg.com/vi/KB7GzBv5p4Q/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDVLIUfmrskNAha1yNa-7ygsEeNEA"
+                    alt="">
+                <div class="capsule">23:18</div>
+            </div>
+            <div class="text">
+                <h2>Inserting and Removing Elements using JavaScript | Sigma Web Development Course - Tutorial #71</h2>
+                <p>CodeWithHarry . 727k . 2 months ago</p>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

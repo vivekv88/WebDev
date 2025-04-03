@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .box {
+            border: 2px solid black;
+            /* width: 1232px; */
+            width: 80vw;
+            margin: 5px auto;
+            /* This will automatically centre the div block */
+            box-sizing: border-box;
+            background-color: aquamarine;
+        }
+
+        html {
+            font-size: 12px;
+        }
+
+        .container {
+            border: 2px solid black;
+            /* width: 1232px; */
+            width: 80vw;
+            /* height: 80vh; */
+            margin: 20px auto;
+            /* This will automatically centre the div block */
+            box-sizing: border-box;
+            /* font-size: 18px; */
+            background-color: aquamarine;
+            min-height: 80vh;
+            border: 2px solid black;
+        }
+
+        .container>div {
+            font-size: 2em;
+            /* font-size: 2rem; */
+            width: 50%;
+            border: 2px solid green;
+        }
+
+        .container>div>div {
+            /* font-size: 2em; */
+            font-size: 2rem;
+            width: 50%;
+            border: 2px solid orangered;
+        }
+
+        .mycont {
+            /* width: 100vmin; */
+            background-color: blue;
+            color: tomato;
+            font-size: medium;
+            margin: 25px auto;
+            box-sizing: border-box;
+            border: 5px solid red;
+            width: 80vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a box...
+    </div>
+    <div class="container">
+        <div>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum sapiente beatae sint eaque, blanditiis
+            suscipit expedita consequuntur porro molestiae modi nam rem omnis facilis eius dolores adipisci? Facere
+            architecto, amet repudiandae exercitationem pariatur ullam corrupti corporis? Perspiciatis, voluptates.
+            Neque, vel.
+            <div>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum perspiciatis consectetur nesciunt
+                officia debitis libero nobis hic excepturi repellendus voluptatem.
+            </div>
+        </div>
+
+        <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, molestiae alias. Laudantium, ad praesentium! Cum, qui. Repudiandae adipisci quas molestiae sed perspiciatis recusandae quo aliquid magni illum asperiores. Molestiae, harum consequatur est assumenda fuga laudantium autem quam nesciunt nam blanditiis, iure praesentium recusandae eum, commodi saepe! Explicabo dolorum esse animi libero est aut magni, eos quasi harum suscipit numquam accusantium quaerat nisi rem doloribus iusto voluptate facere aliquid magnam dolorem expedita! Perspiciatis deleniti praesentium assumenda? Est sunt quo sed quos, placeat veniam amet perspiciatis repudiandae quasi nam magni eos ipsam maxime porro debitis in, minus earum vel qui quod accusamus praesentium aperiam. Asperiores molestias, nemo pariatur laboriosam recusandae qui possimus ullam tempore alias culpa blanditiis dolores corporis distinctio numquam quaerat beatae omnis corrupti quibusdam eos magnam voluptatibus iste earum error totam! Quidem numquam deleniti dolorum. Eum delectus, odit tenetur soluta sapiente, autem est esse fugit fuga ad totam suscipit? Placeat. -->
+
+
+        <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde perferendis quam consequatur repudiandae esse deleniti, aliquid non dolorum quis, magni odio consequuntur veniam sequi et! Autem harum in itaque quae quaerat cum non ad architecto doloribus optio eius temporibus quasi sit iusto recusandae libero, alias voluptate hic laboriosam reprehenderit ea, asperiores, quas veritatis. Nostrum obcaecati quaerat, debitis tenetur necessitatibus eaque, praesentium dolor dignissimos nobis ex maxime quae est quam qui? Corporis temporibus aspernatur doloribus odio aliquid, quam ea esse adipisci, ratione distinctio facere cum molestiae nisi voluptates nesciunt perspiciatis aliquam labore iusto ipsum voluptas magni porro earum. Nobis dolorum repellendus cum quisquam deserunt aspernatur accusamus nemo, dolor, earum beatae dolores quas, perferendis obcaecati similique officia veniam provident tempora velit ratione dolore culpa enim laborum corporis. Rerum inventore nihil, consectetur quisquam maiores ad quam corporis enim velit labore beatae. Laborum hic vel ducimus ipsum illo totam reiciendis dolore nisi quas praesentium facilis, ipsam maxime quia dolorem distinctio atque, modi, odit ut qui! Molestiae laudantium suscipit pariatur odio nam, assumenda, ipsum natus, eius eos ex laborum possimus nulla in quas obcaecati similique. Quod asperiores dolor aperiam accusamus, sint impedit! Obcaecati impedit sit possimus quibusdam, nobis, vel placeat ipsa omnis accusamus cumque officia. -->
+
+    </div>
+
+    <div class="mycont">
+        This is my container and I am here to take it...
+    </div>
+</body>
+
+</html>
